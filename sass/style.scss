@@ -2,9 +2,15 @@
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
  */
-@import "variables.scss";
-@import "body.scss";
-@import "header.scss";
-@import "button.scss";
-@import "main.scss";
-@import "footer.scss";
+@import "header/header.scss";
+@import "services_block/service.scss";
+@import "our_team_block/team.scss";
+@import "we_got_skills_block/skills.scss";
+@import "our_portfolio/portfolio.scss";
+@import "feedback_about_us/feedback.scss";
+@import "contacts_block/contacts.scss";
+@import "footer_block/footer.scss";
+@import "buttons/button.scss";
+@import "variables_&_mixins/variables.scss";
+@import "variables_&_mixins/mixins.scss";
+@import "fonts/fonts.scss";
