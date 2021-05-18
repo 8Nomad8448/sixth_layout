@@ -1,0 +1,12 @@
+@mixin sub-headlines ($font_sizes, $font_weights, $line_height, $text-colors) {
+  font-weight: $font_weights;
+  font-size: $font_sizes;
+  line-height: $line_height;
+  color: $text-colors;
+}
+@mixin buttons ($padding, $background, $border_bot, $border_rad) {
+  padding: $padding;
+  background: $background;
+  border-bottom: $border_bot;
+  border-radius: $border_rad;
+}
