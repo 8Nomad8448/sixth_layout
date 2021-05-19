@@ -2,29 +2,29 @@ nav {
   width: 100%;
   background: $purple;
   justify-content: space-between;
-  #navbarNav .navbar-nav .nav-item .nav-link{
-    @include nodecored(none, $tex-upper);
-    @include text($fontsize_other, $weight_primary, $line_height_main, 0.01px);
-    @include linked($white, $purple_dark, 4px);
-    @include colors($transparent, $white);
-    padding: 7px 17px;
-  }
-  .navbar-brand {
-    margin-left: 3em;
-  }
-}
-nav   #navbarNav .navbar-nav .nav-item {
-  margin-left: .63em;
-}
-nav .main-nav {
-  width: 100%;
-  justify-content: space-between;
-}
-nav #navbarNav {
-  width: fit-content;
-  justify-content: flex-end;
-  ul {
-    margin: 0;
-    padding-bottom: .3em;
+  .main-nav{
+    width: 100%;
+    justify-content: space-between;
+    .navbar-brand {
+      margin-left: 3em;
+    }
+    #navbarNav {
+      width: fit-content;
+      justify-content: flex-end;
+      .navbar-nav .nav-item {
+        margin-left: .63em;
+        .nav-link {
+          @include nodecored($tex-upper);
+          @include text($fontsize_other, $weight_primary, $line_height_main, 0.01px);
+          @include linked($white, $purple_dark, 4px);
+          @include colors($transparent, $white);
+          padding: 7px 17px;
+        }
+      }
+      ul {
+        margin: 0;
+        padding-bottom: .3em;
+      }
+    }
   }
 }

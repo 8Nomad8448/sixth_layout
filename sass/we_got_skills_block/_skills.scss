@@ -1,0 +1,33 @@
+.our-skills {
+	padding: 7.25em 0;
+	width: 100%;
+	.headline {
+		@include nodecored($tex-upper);
+		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
+		@include colors($transparent, $blue_grey);
+		@include centered();
+	}
+	.subheadline {
+		width: 100%;
+		margin: 2.45em 0 4em;
+		@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
+		@include colors($transparent, $blue_grey);
+	}
+	.skills-blocks {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		.number {
+			position: absolute;
+			left: 50%;
+			bottom: 50%;
+			@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
+			@include colors($orange_light, $white);
+		}
+	}
+	.small_headlines {
+		@include nodecored($tex-upper);
+		@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
+		@include colors($orange_light, $white);
+	}
+}

@@ -1,13 +1,13 @@
 header .header-main-content .buttons {
 	width: 100%;
 	@include centered();
-	margin-top: 3.19em;
-}
-header .header-main-content .buttons a{
-	padding: 21px 81px 18px 82px;
-	@include nodecored(none, $tex-upper);
-	@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
-	@include colors($orange_light, $white);
-	@include linked($white, $orange_light, 6px);
-	@include buttons(4px solid #c76a3f, 6px);
+	margin-top: 3.1em;
+	a{
+		padding: 21px 81px 18px 82px;
+		@include nodecored($tex-upper);
+		@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
+		@include colors($orange_light, $white);
+		@include linked($white, $orange_light, 6px);
+		@include buttons(4px solid #c76a3f, 6px);
+	}
 }

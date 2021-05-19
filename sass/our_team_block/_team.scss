@@ -1,0 +1,55 @@
+.our-team {
+	width: 100%;
+	background: $white_blue;
+	padding: 7.45em 0 7.6em;
+	.headline {
+		width: 100%;
+		@include centered();
+		@include text(41.3px, $weight_some_headline, 30px, .075em);
+		@include colors($transparent, $blue_grey);
+		@include nodecored($tex-upper);
+	}
+	.subheadline {
+		width: 100%;
+		@include text($fontsize_secondary, $weight_primary, $line_height_secondary, $letter_spacings_main);
+		@include colors($transparent, $blue_grey);
+		margin: 2.45em 0 4.2em;
+	}
+	.block_team {
+		width: 100%;
+		.small_headlines {
+			width: 100%;
+			@include text($fontsize_sub_headline, $weight_some_headline, $line_height_main, $letter_spacings_main);
+			@include colors($transparent, $blue_grey_dark);
+			@include nodecored($tex-upper);
+			margin: 1.35em 0 0 0;
+		}
+		.under_small_headlines p{
+			@include text($fontsize_other, $weight_primary, $line_height_main, $letter_spacings_main);
+			@include colors($transparent, $teal);
+			margin: .75em 0 0 0;
+		}
+		.paragraphs{
+			@include text($fontsize_other, 300, $line_height_secondary_headline, $letter_spacings_main);
+			@include colors($transparent, $blue_grey);
+			margin: 1.35em 0 3.56em 0;
+		}
+		.socials {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			a {
+				background: $blue_wite_light;
+				width: 2em;
+				padding: 5px 3px 4px;
+				height: auto;
+				color: $white;
+				border-radius: 50%;
+				margin: 0 .2em;
+				i {
+					font-size: $fontsize_main;
+				}
+			}
+		}
+	}
+}

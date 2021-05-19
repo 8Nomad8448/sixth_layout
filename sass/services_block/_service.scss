@@ -1,0 +1,32 @@
+.services {
+	width: 100%;
+	padding: 7.515em 0 6.85em;
+	background: $teal_light;
+	.headline {
+		width: 100%;
+		@include nodecored($tex-upper);
+		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
+		@include colors($transparent, $white);
+		@include centered();
+	}
+	.subheadline {
+		width: 100%;
+		@include text($fontsize_main, $weight_primary, $line_height_secondary, .0235em);
+		@include colors($transparent, $white);
+		margin: 1.35em auto 2.6em;
+	}
+	.block_service {
+		h3{
+			width: 100%;
+			@include nodecored($tex-upper);
+			@include text($fontsize_sub_headline, $weight_some_headline, $line_height_main, $letter_spacings_main);
+			@include colors($transparent, $white);
+			margin: 2em auto .9em;
+		}
+		.paragraphs{
+			width: 100%;
+			@include text($fontsize_other, 300, $line_height_secondary_headline, $letter_spacings_main);
+			@include colors($transparent, $white);
+		}
+	}
+}

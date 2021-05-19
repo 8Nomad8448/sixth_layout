@@ -18,7 +18,7 @@
     border-radius: $border_rad;
   }
 }
-@mixin nodecored($non_decorated, $text_trans) {
+@mixin nodecored($text_trans, $non_decorated:none) {
   text-decoration: $non_decorated;
   text-transform: $text_trans;
 }
@@ -26,7 +26,7 @@
   border-bottom: $border_bot;
   border-radius: $border_rad;
 }
-@mixin centered{
+@mixin centered() {
   margin: 0 auto;
   text-align: center;
 }
