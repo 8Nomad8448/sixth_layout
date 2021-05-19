@@ -1,18 +1,61 @@
-$white: #fff;
-$white_another: #e0f7f3;
+//colors --
+//backgrounds:
+$transparent: transparent;
 $white_blue: #e7f1f8;
 $purple: #87509c;
-$purple_dark: #643a79;
 $orange_light: #eb7d4b;
-$orange_dark: #c55725;
 $teal_light: #17c2a4;
-$teal: #30bae7;
-$blue_grey: #3c4761;
-$blue_wite_light: #bdd1df;
-$grey_black: #393939;
+$white: #fff;
 $orange_grey: #ffdd99;
-$black: #000000;
 $pink: #d74680;
 $blue_light: #3c5499;
-$blue_dark: #273a71;
 $blue_grey_light: #344b8e;
+$blue_dark: #273a71;
+
+//bakgrounds for buttons:
+$blue_wite_light: #bdd1df;
+$white_another: #e0f7f3;
+
+//bakgrounds for buttons :hovered, :active, :focused
+$purple_dark: #643a79;
+$white: #fff;
+
+//text colors:
+$orange_dark: #c55725;
+$teal: #30bae7;
+$blue_grey: #3c4761;
+$grey_black: #393939;
+$black: #000000;
+$diff_white: #f7f3ea;
+
+//font attributes --
+//letter-spacings:
+$letter_spacings_main: 0.02em;
+$letter_spacings_headline: 0.1em;
+
+//font-sizes:
+$fontsize_main: 18px;
+$fontsize_other: 16px;
+$fontsize_secondary: 18.6px;
+$fontsize_headline: 40px;
+$fontsize_sub_headline: 24px;
+
+//line-height:
+$line_height_main: 18px;
+$line_height_other: 16px;
+$line_height_secondary: 26px;
+$line_height_secondary_headline: 24px;
+$line_height_sub_headline: 19px;
+$line_height_other_headline: 29px;
+
+//text-decorations:
+$italic: italic;
+$tex-upper: uppercase;
+
+//font-weights:
+$weight_primary: 400;
+$weight_secondary: 600;
+$weight_some_headline: 700;
+
+//some styles:
+$marg_none: 0;

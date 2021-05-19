@@ -1,12 +1,32 @@
-@mixin sub-headlines ($font_sizes, $font_weights, $line_height, $text-colors) {
-  font-weight: $font_weights;
+@mixin text($font_sizes, $font_weights, $line_height, $letter_spaces) {
   font-size: $font_sizes;
+  font-weight: $font_weights;
   line-height: $line_height;
-  color: $text-colors;
+  letter-spacing: $letter_spaces;
 }
-@mixin buttons ($padding, $background, $border_bot, $border_rad) {
-  padding: $padding;
-  background: $background;
+@mixin colors($back_color, $text_colors) {
+  background: $back_color;
+  color: $text_colors;
+}
+@mixin linked($link_hovered_text, $link_hovered_back, $border_rad: none, $non_decorated:none, $transitioned:.5s,$transit-function:ease-in-out) {
+  &:hover, :active, :focus {
+    color: $link_hovered_text;
+    background: $link_hovered_back;
+    text-decoration: $non_decorated;
+    transition: $transitioned;
+    transition-timing-function: $transit-function;
+    border-radius: $border_rad;
+  }
+}
+@mixin nodecored($non_decorated, $text_trans) {
+  text-decoration: $non_decorated;
+  text-transform: $text_trans;
+}
+@mixin buttons($border_bot, $border_rad) {
   border-bottom: $border_bot;
   border-radius: $border_rad;
+}
+@mixin centered{
+  margin: 0 auto;
+  text-align: center;
 }
