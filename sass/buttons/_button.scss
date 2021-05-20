@@ -1,5 +1,4 @@
 header .header-main-content .buttons {
-	width: 100%;
 	@include centered();
 	margin-top: 3.1em;
 	a{
@@ -8,6 +7,57 @@ header .header-main-content .buttons {
 		@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
 		@include colors($orange_light, $white);
 		@include linked($white, $orange_light, 6px);
-		@include buttons(4px solid #c76a3f, 6px);
+		@include buttons(4px solid $light_orange_border, 6px);
+	}
+}
+.portfolio, form .text_area .contacts {
+	.buttons, .buttons_switch {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+.portfolio {
+	.buttons_switch{
+		a {
+			@include nodecored($tex-upper);
+			@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
+			@include colors($black, $grey_black);
+			@include linked($grey_black, $white, 4px);
+			@include buttons(none, 4px);
+			padding: 5px 20px;
+			margin-left: 10px;
+		}
+		margin: 1.75em 10px 4.4em 0px;
+	}
+	.buttons {
+		a {
+			@include nodecored($tex-upper);
+			@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
+			@include colors($teal_light, $white);
+			@include linked($white, $teal_light, 4px);
+			@include buttons(4px solid $teal_border, 4px);
+			padding: 22px 55px 18px 55px;
+		}
+		margin: 1.15em 10px 4.4em 0px;
+	}
+}
+.contacts {
+	form .text_area .buttons{
+		a {
+			@include colors($teal, $white);
+			@include linked($white, $teal, 4px);
+			@include buttons(4px solid $teal_border, 4px);
+			padding: 22px 65px 19px 65px;
+			input {
+				@include nodecored($tex-upper);
+				@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
+				@include colors($teal, $white);
+				background: $transparent;
+				border: none;
+				outline: none;
+			}
+		}
+		margin: 4.63em 10px 4.4em 0px;
 	}
 }

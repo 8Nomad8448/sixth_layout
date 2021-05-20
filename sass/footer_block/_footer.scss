@@ -1,0 +1,24 @@
+.footer-region {
+	background: $blue_grey_light;
+	padding: 2.65em 0;
+	padding: 2.65em 15.6em 2.65em 15.5em;
+	.social-links-list {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		.link-list-item {
+			margin: 0;
+			padding: 0;
+			a{
+				transition: .5s;
+				transition-timing-function: ease-in-out;
+				@include nodecored(none, none);
+				@include text($fontsize_sub_headline, $weight_secondary, $line_height_other_headline, $letter_spacings_main);
+				@include colors($transparent, $white);
+				@include linked($teal, $transparent, none);
+			}
+		}
+	}
+}

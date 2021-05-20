@@ -25,21 +25,27 @@ $orange_dark: #c55725;
 $teal: #30bae7;
 $blue_grey: #3c4761;
 $grey_black: #393939;
-$black: #000000;
+$black: rgba(0,0,0,0.07);
 $diff_white: #f7f3ea;
 $blue_grey_dark: #27283d;
+$red: #ef4246;
+
+//bott border for buttons:
+$teal_border: #13a58b;
+$light_orange_border: #c76a3f;
 
 //font attributes --
-//letter-spacings:
-$letter_spacings_main: 0.02em;
-$letter_spacings_headline: 0.1em;
-
 //font-sizes:
 $fontsize_main: 18px;
 $fontsize_other: 16px;
 $fontsize_secondary: 18.6px;
 $fontsize_headline: 40px;
 $fontsize_sub_headline: 24px;
+
+//font-weights:
+$weight_primary: 400;
+$weight_secondary: 600;
+$weight_some_headline: 700;
 
 //line-height:
 $line_height_main: 18px;
@@ -49,14 +55,13 @@ $line_height_secondary_headline: 24px;
 $line_height_sub_headline: 19px;
 $line_height_other_headline: 29px;
 
+//letter-spacings:
+$letter_spacings_main: .02em;
+$letter_spacings_headline: .1em;
+
 //text-decorations:
 $italic: italic;
 $tex-upper: uppercase;
-
-//font-weights:
-$weight_primary: 400;
-$weight_secondary: 600;
-$weight_some_headline: 700;
 
 //some styles:
 $marg_none: 0;

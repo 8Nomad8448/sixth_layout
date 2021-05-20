@@ -1,0 +1,20 @@
+.portfolio {
+	background: $orange_grey;
+	padding: 5em 0 2.39em;
+	.headline{
+		margin: .95em 0 .65em;
+		@include nodecored($tex-upper);
+		@include text($fontsize_headline, $weight_some_headline, 29px, $letter_spacings_headline);
+		@include colors($transparent, $grey_black);
+	}
+	.subheadline {
+		@include text($fontsize_main, $weight_primary, 26px, $letter_spacings_main);
+		@include colors($transparent, $grey_black);
+	}
+	.small_headlines {
+		@include nodecored($tex-upper);
+		@include text($fontsize_main, $weight_primary, $line_height_sub_headline, $letter_spacings_main);
+		@include colors($transparent, $grey_black);
+		margin: 1.15em 0 3.5em;
+	}
+}

@@ -1,0 +1,63 @@
+.contacts {
+	padding: 7.42em 0 4.1em;
+	background: $blue_light;
+	.headline, .subheadline, form {
+		@include centered();
+	}
+	.headline {
+		margin-bottom: 1.075em;
+		@include nodecored($tex-upper);
+		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
+		@include colors($transparent, $white);
+	}
+	.subheadline {
+		@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
+		@include colors($transparent, $white);
+		margin-bottom: 4.25em;
+	}
+	form {
+		max-width: 80%;
+		.left_area input, .right_area input, .text-wrapper textarea {
+			border: none;
+			outline: none;
+		}
+		.left_area, .right_area {
+			input {
+				padding: 21px 25px;
+				border-radius: 2px;
+				background: $blue_dark;
+				&::placeholder{
+					@include text($line_height_main, $weight_primary, $line_height_main, normal);
+					@include colors($transparent, $white);
+				}
+				&::after{
+					content: '*';
+					color: $red;
+				}
+			}
+		}
+		.text-wrapper {
+			position: relative;
+			textarea {
+				height: 15em;
+				margin-top: 1.8em;
+				background: $blue_dark;
+				border-radius: 2px;
+				padding: 23px 25px;
+				resize: vertical;
+				&::placeholder{
+					@include text($line_height_main, $weight_primary, $line_height_main, normal);
+					@include colors($transparent, $white);
+				}
+				&::-webkit-resizer {
+					display: none;
+				}
+			}
+			img {
+				position: absolute;
+				right: .5em;
+				bottom: .85em;
+			}
+		}
+	}
+}

@@ -10,7 +10,6 @@ header {
     margin: 5.4em auto 5.35em;
     width: 100%;
     .headline {
-      width: 100%;
       @include text(42.2px, $weight_some_headline, 48px, normal);
       @include colors($transparent, $diff_white);
     }

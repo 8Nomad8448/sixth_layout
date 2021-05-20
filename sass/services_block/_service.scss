@@ -1,19 +1,16 @@
 .services {
-	width: 100%;
-	padding: 7.515em 0 6.85em;
+	padding: 7.515em 0 6.75em;
 	background: $teal_light;
 	.headline {
-		width: 100%;
 		@include nodecored($tex-upper);
 		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
 		@include colors($transparent, $white);
 		@include centered();
 	}
 	.subheadline {
-		width: 100%;
 		@include text($fontsize_main, $weight_primary, $line_height_secondary, .0235em);
 		@include colors($transparent, $white);
-		margin: 1.35em auto 2.6em;
+		margin: 1.35em auto 3.4em;
 	}
 	.block_service {
 		h3{

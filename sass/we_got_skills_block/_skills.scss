@@ -1,5 +1,5 @@
 .our-skills {
-	padding: 7.25em 0;
+	padding: 7.25em 0 6.25em;
 	width: 100%;
 	.headline {
 		@include nodecored($tex-upper);
@@ -8,7 +8,6 @@
 		@include centered();
 	}
 	.subheadline {
-		width: 100%;
 		margin: 2.45em 0 4em;
 		@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
 		@include colors($transparent, $blue_grey);
@@ -19,15 +18,19 @@
 		position: relative;
 		.number {
 			position: absolute;
-			left: 50%;
-			bottom: 50%;
-			@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
-			@include colors($orange_light, $white);
+			left: 38%;
+			bottom: 31%;
+			@include text(50px, 300, 52px, .01em);
+			@include colors($transparent, $blue_grey);
+			span {
+				font-size: 30px;
+				letter-spacing: .01em;
+			}
 		}
 	}
 	.small_headlines {
 		@include nodecored($tex-upper);
-		@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
-		@include colors($orange_light, $white);
+		@include text($fontsize_sub_headline, $weight_some_headline, $line_height_main, $letter_spacings_main);
+		@include colors($transparent, $blue_grey);
 	}
 }

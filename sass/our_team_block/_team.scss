@@ -1,16 +1,13 @@
 .our-team {
-	width: 100%;
 	background: $white_blue;
 	padding: 7.45em 0 7.6em;
 	.headline {
-		width: 100%;
 		@include centered();
 		@include text(41.3px, $weight_some_headline, 30px, .075em);
 		@include colors($transparent, $blue_grey);
 		@include nodecored($tex-upper);
 	}
 	.subheadline {
-		width: 100%;
 		@include text($fontsize_secondary, $weight_primary, $line_height_secondary, $letter_spacings_main);
 		@include colors($transparent, $blue_grey);
 		margin: 2.45em 0 4.2em;

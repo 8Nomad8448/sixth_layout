@@ -1,0 +1,56 @@
+.about_us {
+	background: $pink;
+	padding: 5em 0 7.93em;
+	.headline {
+		@include centered();
+		@include nodecored($tex-upper);
+		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
+		@include colors($transparent, $white);
+		margin-top: 1em;
+	}
+	.subheadline {
+		@include centered();
+		@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
+		@include colors($transparent, $white);
+		margin-top: 2.35em;
+		margin-bottom: 3.6em;
+	}
+	.about_third, .about_fourth {
+		margin-top: 8.8em;
+	}
+	.about_first, .about_third {
+		padding-right: 0;
+		padding-left: 1.45em;
+	}
+	.about_second, .about_fourth {
+		padding-right: 0px;
+		padding-left: 2.45em;
+	}
+	.about_block {
+		justify-content: space-between;
+		.content-wrapp {
+			width: 83%;
+			.paragraphs, .small_headlines, .small_description {
+				width: 83%;
+				margin: 0 auto;
+			}
+			.paragraphs {
+				font-style: $italic;
+				@include text(21px, $weight_primary, 31px, $letter_spacings_main);
+				@include colors($transparent, $white);
+				margin-top: .2em;
+			}
+			.small_headlines {
+				@include text($line_height_secondary_headline, $weight_some_headline, $line_height_secondary, $letter_spacings_main);
+				@include colors($transparent, $white);
+				@include nodecored($tex-upper);
+				margin-top: .94em;
+			}
+			.small_description {
+				@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
+				@include colors($transparent, $orange_grey);
+				margin-top: .05em;
+			}
+		}
+	}
+}
