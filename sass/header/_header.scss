@@ -12,6 +12,9 @@ header {
     .headline {
       @include text(42.2px, $weight_some_headline, 48px, normal);
       @include colors($transparent, $diff_white);
+      span {
+        margin-right: .21em;
+      }
     }
   }
 }

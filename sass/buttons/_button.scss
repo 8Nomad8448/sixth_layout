@@ -1,8 +1,9 @@
 header .header-main-content .buttons {
 	@include centered();
-	margin-top: 3.1em;
+	margin-top: 3.03em;
 	a{
-		padding: 21px 81px 18px 82px;
+		margin-right: -1px;
+		padding: 21px 80px 18px 81px;
 		@include nodecored($tex-upper);
 		@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
 		@include colors($orange_light, $white);

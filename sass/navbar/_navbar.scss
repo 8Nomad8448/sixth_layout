@@ -6,13 +6,14 @@ nav {
     width: 100%;
     justify-content: space-between;
     .navbar-brand {
-      margin-left: 3em;
+      margin: 1px 0 0 3.05em;
     }
     #navbarNav {
       width: fit-content;
       justify-content: flex-end;
       .navbar-nav .nav-item {
         margin-left: .63em;
+        padding-bottom: .35em;
         .nav-link {
           @include nodecored($tex-upper);
           @include text($fontsize_other, $weight_primary, $line_height_main, 0.01px);
@@ -20,10 +21,12 @@ nav {
           @include colors($transparent, $white);
           padding: 7px 17px;
         }
+        &:last-child a{
+          padding: 7px 16px 7px 18px;
+        }
       }
-      ul {
+      .navbar-nav {
         margin: 0;
-        padding-bottom: .3em;
       }
     }
   }

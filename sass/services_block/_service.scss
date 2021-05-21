@@ -1,16 +1,29 @@
 .services {
-	padding: 7.515em 0 6.75em;
+	padding: 7.4em 0 6.91em;
 	background: $teal_light;
+	hr{
+		margin: 1.25em auto 0;
+		width: 5.5em;
+		border: 4px solid $black_border_services;
+	}
 	.headline {
 		@include nodecored($tex-upper);
 		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
 		@include colors($transparent, $white);
 		@include centered();
+		margin-left: 3px;
 	}
 	.subheadline {
-		@include text($fontsize_main, $weight_primary, $line_height_secondary, .0235em);
+		@include text($fontsize_main, $weight_primary, $line_height_secondary, .015em);
 		@include colors($transparent, $white);
-		margin: 1.35em auto 3.4em;
+		margin: 0 auto 3em;
+		p {
+			margin-top: .9em;
+			span {
+				margin-left: 7px;
+				letter-spacing: .37px;
+			}
+		}
 	}
 	.block_service {
 		h3{
@@ -24,6 +37,58 @@
 			width: 100%;
 			@include text($fontsize_other, 300, $line_height_secondary_headline, $letter_spacings_main);
 			@include colors($transparent, $white);
+		}
+	}
+	.block_wrapper .block_service{
+		&:nth-child(2n-1) {
+			margin-top: 1.7em;
+			padding-right: 0px;
+			img {
+				margin-left: .7em;
+				margin-bottom: .4em;
+			}
+		}
+		&:nth-child(2n) {
+			margin-top: 1.295em;
+			padding-right: 0px;
+			img {
+				margin-bottom: .4em;
+			}
+			h3 {
+				padding-right: .45em;
+			}
+			p {
+				padding-right: .6em;
+			}
+		}
+		&:nth-child(4n-1) {
+			margin: 1.69em 0 0 0;
+			padding-right: 15px;
+			img {
+				margin-right: 1.52em;
+				margin-bottom: .24em;
+			}
+			h3 {
+				padding-right: .3em;
+			}
+			p {
+				padding-right: .2em;
+			}
+		}
+		&:nth-child(4n) {
+			margin: 1.45em 0 0 0;
+			padding-right: 15px;
+			img {
+				margin-right: 1.2em;
+				margin-bottom: .24em;
+			}
+			h3 {
+				padding-right: 0.65em;
+				margin-top: 1.84em;
+			}
+			p {
+				padding-right: .85em;
+			}
 		}
 	}
 }

@@ -1,16 +1,21 @@
 .our-team {
 	background: $white_blue;
-	padding: 7.45em 0 7.6em;
+	padding: 7.35em 0 7.6em;
+	hr {
+		margin: 1.45em auto 0;
+		width: 5.5em;
+		border: 2px solid $grey_border_team;
+	}
 	.headline {
 		@include centered();
-		@include text(41.3px, $weight_some_headline, 30px, .075em);
+		@include text(41.3px, $weight_some_headline, 30px, .078em);
 		@include colors($transparent, $blue_grey);
 		@include nodecored($tex-upper);
 	}
 	.subheadline {
-		@include text($fontsize_secondary, $weight_primary, $line_height_secondary, $letter_spacings_main);
+		@include text($fontsize_secondary, $weight_primary, $line_height_secondary, .005em);
 		@include colors($transparent, $blue_grey);
-		margin: 2.45em 0 4.2em;
+		margin: 1em 0 4.2em;
 	}
 	.block_team {
 		width: 100%;
@@ -47,6 +52,11 @@
 					font-size: $fontsize_main;
 				}
 			}
+		}
+	}
+	.team_block_wrapp .block_team {
+		&:nth-child(2n-1) {
+			padding-right: 0px;
 		}
 	}
 }
