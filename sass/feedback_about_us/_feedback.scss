@@ -1,19 +1,95 @@
 .about_us {
 	background: $pink;
 	padding: 5em 0 7.93em;
+	hr {
+		margin: 0 auto 0;
+		width: 5.5em;
+		border: 2px solid $orange_grey_portfolio;
+	}
 	.headline {
 		@include centered();
 		@include nodecored($tex-upper);
 		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
 		@include colors($transparent, $white);
-		margin-top: 1em;
+		margin: .97em auto .5em;
+		padding-left: 5px;
 	}
 	.subheadline {
 		@include centered();
-		@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
+		@include text($fontsize_main, $weight_primary, $line_height_secondary, .025em);
 		@include colors($transparent, $white);
-		margin-top: 2.35em;
-		margin-bottom: 3.6em;
+		margin: 1.05em auto 3.6em;
+	}
+	.comment_block {
+		.about_block {
+			&:nth-child(2n-1) {
+				.content-wrapp {
+					.paragraphs {
+						letter-spacing: .034em;
+						margin-left: 2.16em;
+						margin-top: .24em;
+					}
+					.small_headlines {
+						margin-top: .9em;
+						margin-left: 1.9em;
+					}
+					.small_description {
+						margin-left: 2.64em;
+					}
+				}
+			}
+			&:nth-child(2n) {
+				.content-wrapp{
+					.paragraphs {
+						letter-spacing: .035em;
+						margin-left: 2.25em;
+					}
+					.small_headlines {
+						padding-left: 1px;
+						margin-left: 1.9em;
+					}
+					.small_description {
+						margin-left: 2.7em;
+						margin-top: 0;
+					}
+				}
+			}
+			&:nth-child(4n-1) {
+				.content-wrapp {
+					.paragraphs {
+						letter-spacing: .034em;
+						margin-left: 2.19em;
+						margin-top: .1em;
+					}
+					.small_headlines {
+						margin-top: 1.05em;
+						margin-left: 1.9em;
+					}
+					.small_description {
+						margin-left: 2.64em;
+					}
+				}
+			}
+			&:nth-child(4n) {
+				.content-wrapp {
+					.paragraphs {
+						width: 88%;
+						letter-spacing: .034em;
+						margin-left: 2.19em;
+						margin-top: .2em;
+					}
+					.small_headlines {
+						margin-top: .98em;
+						margin-left: 1.87em;
+					}
+					.small_description {
+						margin-top: 1px;
+						letter-spacing: .025em;
+						margin-left: 2.6em;
+					}
+				}
+			}
+		}
 	}
 	.about_third, .about_fourth {
 		margin-top: 8.8em;

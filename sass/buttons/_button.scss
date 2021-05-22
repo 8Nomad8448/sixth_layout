@@ -1,6 +1,6 @@
 header .header-main-content .buttons {
 	@include centered();
-	margin-top: 3.03em;
+	margin-top: 3.2em;
 	a{
 		margin-right: -1px;
 		padding: 21px 80px 18px 81px;
@@ -29,7 +29,29 @@ header .header-main-content .buttons {
 			padding: 5px 20px;
 			margin-left: 10px;
 		}
-		margin: 1.75em 10px 4.4em 0px;
+		margin: 2.9em 10px 4.3em 0px;
+		span a{
+			&:nth-child(2n-1) {
+				margin-left: 4px;
+				padding: 6px 28px;
+				margin-right: 1px;
+			}
+			&:nth-child(2n) {
+				margin-left: 8px;
+				padding: 5px 24px;
+				margin-right: 3px;
+			}
+			&:nth-child(4n-1) {
+				margin-left: 4px;
+				padding: 5px 24px;
+				margin-right: 9px;
+			}
+			&:nth-child(4n) {
+				margin-right: 3px;
+				padding: 5px 20px;
+				margin-left: 0px;
+			}
+		}
 	}
 	.buttons {
 		a {
@@ -38,7 +60,9 @@ header .header-main-content .buttons {
 			@include colors($teal_light, $white);
 			@include linked($white, $teal_light, 4px);
 			@include buttons(4px solid $teal_border, 4px);
-			padding: 22px 55px 18px 55px;
+			padding: 22px 52px 18px 58px;
+			margin-left: 11px;
+			margin-top: 1px;
 		}
 		margin: 1.15em 10px 4.4em 0px;
 	}
@@ -49,16 +73,18 @@ header .header-main-content .buttons {
 			@include colors($teal, $white);
 			@include linked($white, $teal, 4px);
 			@include buttons(4px solid $teal_border, 4px);
-			padding: 22px 65px 19px 65px;
+			padding: 22px 0 19px 0;
 			input {
+				width: 16.35em;
+				font-family: 'Titillium Web', sans-serif;
 				@include nodecored($tex-upper);
-				@include text($fontsize_main, $weight_secondary, $line_height_secondary, $letter_spacings_main);
+				@include text($fontsize_main, $weight_secondary, $line_height_secondary, .01em);
 				@include colors($teal, $white);
 				background: $transparent;
 				border: none;
 				outline: none;
 			}
 		}
-		margin: 4.63em 10px 4.4em 0px;
+		margin: 4.75em 0px 4.4em 0px;
 	}
 }

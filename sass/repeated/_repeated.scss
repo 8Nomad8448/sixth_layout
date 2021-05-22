@@ -1,3 +1,10 @@
+body {
+	margin: 0 auto;
+}
+* {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
+}
 header, .our-team, .services, .our-skills, .portfolio, .about_us, .contacts, .headline, .subheadline, form .left_area input, form .right_area input, textarea, header .header-main-content .buttons, .footer-region, .footer-region .social-links-list {
 	width: 100%;
 }

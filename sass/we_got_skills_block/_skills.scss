@@ -1,16 +1,27 @@
 .our-skills {
-	padding: 7.25em 0 6.25em;
+	padding: 7.3em 0 6.15em;
 	width: 100%;
+	hr {
+		margin: 1.32em auto 0;
+		width: 5.5em;
+		border: 2px solid $teal_border_skills;
+	}
 	.headline {
+		padding-left: 0.1em;
 		@include nodecored($tex-upper);
 		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
 		@include colors($transparent, $blue_grey);
 		@include centered();
 	}
 	.subheadline {
-		margin: 2.45em 0 4em;
+		margin: 1.1em 0 4em;
 		@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
 		@include colors($transparent, $blue_grey);
+		padding-left: 5px;
+		span {
+			letter-spacing: .024em;
+			padding-right: 5px;
+		}
 	}
 	.skills-blocks {
 		display: flex;
@@ -32,5 +43,45 @@
 		@include nodecored($tex-upper);
 		@include text($fontsize_sub_headline, $weight_some_headline, $line_height_main, $letter_spacings_main);
 		@include colors($transparent, $blue_grey);
+	}
+	.skills_wrap .skilled {
+		&:nth-child(2n-1) {
+			padding-right: 0px;
+			.skills-blocks {
+				img {
+					margin-right: 2px;
+				}
+			}
+		}
+		&:nth-child(2n) {
+			.small_headlines {
+				padding-left: 5px;
+			}
+		}
+		&:nth-child(4n-1) {
+			padding-right: 16px;
+			.skills-blocks {
+				img {
+					margin-right: 1px;
+				}
+				.number {
+					left: 36%;
+				}
+			}
+			.small_headlines {
+				padding-right: 3px;
+			}
+		}
+		&:nth-child(4n) {
+			padding-left: 0;
+			.skills-blocks {
+				img {
+					margin-left: 1px;
+				}
+			}
+			.small_headlines {
+				padding-left: 0;
+			}
+		}
 	}
 }

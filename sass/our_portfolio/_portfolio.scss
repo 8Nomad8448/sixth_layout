@@ -1,8 +1,14 @@
 .portfolio {
 	background: $orange_grey;
-	padding: 5em 0 2.39em;
+	padding: 5.1em 0 2.39em;
+	hr {
+		margin: 0 auto 0;
+		width: 5.5em;
+		border: 2px solid $orange_grey_portfolio;
+	}
 	.headline{
-		margin: .95em 0 .65em;
+		padding-left: 5px;
+		margin: .95em 0 .55em;
 		@include nodecored($tex-upper);
 		@include text($fontsize_headline, $weight_some_headline, 29px, $letter_spacings_headline);
 		@include colors($transparent, $grey_black);
@@ -15,6 +21,70 @@
 		@include nodecored($tex-upper);
 		@include text($fontsize_main, $weight_primary, $line_height_sub_headline, $letter_spacings_main);
 		@include colors($transparent, $grey_black);
-		margin: 1.15em 0 3.5em;
+		margin: 1.15em 0 3.45em;
+	}
+	.portfolio_blocks {
+		.buttons_switch {
+			span {
+				a {
+					&:nth-child(2n-1) {
+						margin-left: 0;
+					}
+					&:nth-child(2n) {
+						margin-left: 0;
+					}
+					&:nth-child(4n-1) {
+						margin-left: 0;
+					}
+					&:nth-child(4n) {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+		.projects_block {
+			&:nth-child(2n-1) {
+				img {
+					margin-left: 5px;
+					margin-right: 0;
+				}
+				h3 {
+					margin-top: 1.2em;
+					padding-left: 14px;
+				}
+			}
+			&:nth-child(2n) {
+				padding-left: 0;
+				img {
+					margin-top: 2px;
+					margin-left: 8px;
+				}
+				h3 {
+					margin-top: 1.1em;
+				}
+			}
+			&:nth-child(4n-1) {
+				img {
+					margin-right: 0;
+					margin-top: 0;
+					margin-left: 7px;
+				}
+				h3 {
+					margin-top: 1.2em;
+					padding-right: 21px;
+				}
+			}
+			&:nth-child(4n) {
+				img {
+					margin-top: 1px;
+					margin-right: 0px;
+					margin-left: 10px;
+				}
+				h3 {
+					margin-top: 1.16em;
+					padding-left: 1.3em;
+				}
+			}
+		}
 	}
 }

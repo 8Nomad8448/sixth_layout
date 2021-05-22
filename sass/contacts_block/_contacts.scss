@@ -1,19 +1,26 @@
 .contacts {
-	padding: 7.42em 0 4.1em;
+	padding: 7.33em 0 4.1em;
 	background: $blue_light;
+	hr {
+		margin: 0 auto 1.26em;
+		width: 5.5em;
+		border: 2px solid $blue_transparent_contacts;
+	}
 	.headline, .subheadline, form {
 		@include centered();
 	}
 	.headline {
-		margin-bottom: 1.075em;
+		margin-left: 2px;
+		margin-bottom: .5em;
 		@include nodecored($tex-upper);
 		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
 		@include colors($transparent, $white);
 	}
 	.subheadline {
-		@include text($fontsize_main, $weight_primary, $line_height_secondary, $letter_spacings_main);
+		margin-left: 2px;
+		@include text($fontsize_main, $weight_primary, $line_height_secondary, .026em);
 		@include colors($transparent, $white);
-		margin-bottom: 4.25em;
+		margin-bottom: 4.12em;
 	}
 	form {
 		max-width: 80%;
@@ -23,30 +30,36 @@
 		}
 		.left_area, .right_area {
 			input {
-				padding: 21px 25px;
 				border-radius: 2px;
 				background: $blue_dark;
 				&::placeholder{
-					@include text($line_height_main, $weight_primary, $line_height_main, normal);
+					@include text($fontsize_main, $weight_primary, $line_height_main, .001em);
 					@include colors($transparent, $white);
 				}
-				&::after{
-					content: '*';
-					color: $red;
-				}
+			}
+		}
+		.left_area {
+			input {
+				padding: 20px 23px 16px;
+			}
+		}
+		.right_area {
+			input {
+				padding: 20px 27px 16px;
 			}
 		}
 		.text-wrapper {
 			position: relative;
 			textarea {
 				height: 15em;
-				margin-top: 1.8em;
+				margin-top: 1.9em;
 				background: $blue_dark;
 				border-radius: 2px;
-				padding: 23px 25px;
+				padding: 23px 24px;
 				resize: vertical;
 				&::placeholder{
-					@include text($line_height_main, $weight_primary, $line_height_main, normal);
+					font-family: 'Titillium Web', sans-serif;
+					@include text($fontsize_main, $weight_primary, $line_height_main, .005em);
 					@include colors($transparent, $white);
 				}
 				&::-webkit-resizer {
@@ -56,7 +69,7 @@
 			img {
 				position: absolute;
 				right: .5em;
-				bottom: .85em;
+				bottom: .75em;
 			}
 		}
 	}

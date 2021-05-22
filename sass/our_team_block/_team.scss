@@ -1,6 +1,6 @@
 .our-team {
 	background: $white_blue;
-	padding: 7.35em 0 7.6em;
+	padding: 7.35em 0 7.8em;
 	hr {
 		margin: 1.45em auto 0;
 		width: 5.5em;
@@ -24,9 +24,9 @@
 			@include text($fontsize_sub_headline, $weight_some_headline, $line_height_main, $letter_spacings_main);
 			@include colors($transparent, $blue_grey_dark);
 			@include nodecored($tex-upper);
-			margin: 1.35em 0 0 0;
+			margin: 1.4em 0 0 0;
 		}
-		.under_small_headlines p{
+		.under_small_headlines div{
 			@include text($fontsize_other, $weight_primary, $line_height_main, $letter_spacings_main);
 			@include colors($transparent, $teal);
 			margin: .75em 0 0 0;
@@ -57,6 +57,99 @@
 	.team_block_wrapp .block_team {
 		&:nth-child(2n-1) {
 			padding-right: 0px;
+			.under_small_headlines div {
+				letter-spacing: .03em;
+			}
+			.paragraphs {
+				margin: 1.33em 0 1.76em 0;
+			}
+			.socials {
+				a {
+					margin: 0 .37em;
+					i {
+						font-size: $line_height_other;
+					}
+				}
+			}
+		}
+		&:nth-child(2n) {
+			padding-right: 16px;
+			img {
+				margin-left: 8px;
+			}
+			.paragraphs {
+				margin: 1.45em 0 1.58em 0;
+				padding-left: 6px;
+				letter-spacing: .019em;
+			}
+			.socials {
+				padding-left: 8px;
+				a {
+					margin: 0 .34em;
+					i {
+						font-size: 16px;
+					}
+				}
+			}
+			.small_headlines {
+				padding-left: .27em;
+			}
+			.under_small_headlines {
+
+				div{
+					letter-spacing: .036em;
+					padding-left: .34em;
+				}
+			}
+		}
+		&:nth-child(4n-1) {
+			padding-right: 16px;
+			.small_headlines {
+				padding-right: 5px;
+			}
+			.paragraphs {
+				margin: 1.36em 0 1.65em 0;
+				margin-right: 2px;
+			}
+			.under_small_headlines {
+				div{
+					letter-spacing: .018em;
+					padding-right: 3px;
+				}
+			}
+			.socials {
+				margin: 1.35em 0 0 0;
+				a {
+					margin: 0 .4em;
+					padding-right: 3px;
+				}
+			}
+		}
+		&:nth-child(4n) {
+			padding-left: 0;
+			img {
+				margin-left: 0;
+			}
+			.small_headlines {
+				padding-left: .5em;
+			}
+			.under_small_headlines {
+				div {
+					letter-spacing: .025em;
+					padding-left: .75em;
+				}
+			}
+			.paragraphs {
+				margin: 1.45em 0 1.63em 0;
+				padding-left: 12px;
+				letter-spacing: .018em;
+			}
+			.socials {
+				padding-left: 2px;
+				a {
+					margin: 0 .38em;
+				}
+			}
 		}
 	}
 }
