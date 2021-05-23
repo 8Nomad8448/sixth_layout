@@ -2,9 +2,10 @@
 	padding: 7.4em 0 6.91em;
 	background: $teal_light;
 	hr{
-		margin: 1.25em auto 0;
+		margin: 1.3em auto 0;
 		width: 5.5em;
-		border: 4px solid $black_border_services;
+		border: 2px solid $black_border_services;
+		opacity: .14;
 	}
 	.headline {
 		@include nodecored($tex-upper);
@@ -18,7 +19,7 @@
 		@include colors($transparent, $white);
 		margin: 0 auto 3em;
 		p {
-			margin-top: .9em;
+			margin-top: 1.1em;
 			span {
 				margin-left: 7px;
 				letter-spacing: .37px;
@@ -42,7 +43,7 @@
 	.block_wrapper .block_service{
 		&:nth-child(2n-1) {
 			margin-top: 1.7em;
-			padding-right: 0px;
+			padding-right: 0;
 			img {
 				margin-left: .7em;
 				margin-bottom: .4em;
@@ -50,7 +51,7 @@
 		}
 		&:nth-child(2n) {
 			margin-top: 1.295em;
-			padding-right: 0px;
+			padding-right: 0;
 			img {
 				margin-bottom: .4em;
 			}

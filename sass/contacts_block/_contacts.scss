@@ -1,8 +1,8 @@
 .contacts {
-	padding: 7.33em 0 4.1em;
+	padding: 7.5em 0 4.1em;
 	background: $blue_light;
 	hr {
-		margin: 0 auto 1.26em;
+		margin: 0 auto 1.1em;
 		width: 5.5em;
 		border: 2px solid $blue_transparent_contacts;
 	}
@@ -11,16 +11,19 @@
 	}
 	.headline {
 		margin-left: 2px;
-		margin-bottom: .5em;
+		margin-bottom: .57em;
 		@include nodecored($tex-upper);
 		@include text($fontsize_headline, $weight_some_headline, $line_height_other_headline, $letter_spacings_headline);
 		@include colors($transparent, $white);
 	}
 	.subheadline {
 		margin-left: 2px;
-		@include text($fontsize_main, $weight_primary, $line_height_secondary, .026em);
-		@include colors($transparent, $white);
-		margin-bottom: 4.12em;
+		margin-bottom: 4.55em;
+		a {
+			@include nodecored(none, none);
+			@include text($fontsize_main, $weight_primary, $line_height_secondary, .026em);
+			@include colors($transparent, $white);
+		}
 	}
 	form {
 		max-width: 80%;
@@ -31,36 +34,48 @@
 		.left_area, .right_area {
 			input {
 				border-radius: 2px;
-				background: $blue_dark;
+				@include text($fontsize_main, $weight_primary, $line_height_main, .001em);
+				@include colors($blue_dark, $white);
 				&::placeholder{
 					@include text($fontsize_main, $weight_primary, $line_height_main, .001em);
 					@include colors($transparent, $white);
+				}
+				&::-webkit-input-placeholder {
+					background: -webkit-linear-gradient(left, $white 0%, $white 23%, $red 0%, $red 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
 				}
 			}
 		}
 		.left_area {
 			input {
-				padding: 20px 23px 16px;
+				padding: 15px 23px 15px;
 			}
 		}
 		.right_area {
 			input {
-				padding: 20px 27px 16px;
+				padding: 15px 27px 15px;
 			}
 		}
 		.text-wrapper {
 			position: relative;
 			textarea {
-				height: 15em;
-				margin-top: 1.9em;
-				background: $blue_dark;
+				height: 11.1em;
+				margin-top: 1.45em;
 				border-radius: 2px;
 				padding: 23px 24px;
 				resize: vertical;
+				@include text($fontsize_main, $weight_primary, $line_height_main, .005em);
+				@include colors($blue_dark, $white);
 				&::placeholder{
 					font-family: 'Titillium Web', sans-serif;
 					@include text($fontsize_main, $weight_primary, $line_height_main, .005em);
 					@include colors($transparent, $white);
+				}
+				&::-webkit-input-placeholder {
+					background: -webkit-linear-gradient(left, $white 0%, $white 13.2%, $red 0%, $red 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
 				}
 				&::-webkit-resizer {
 					display: none;

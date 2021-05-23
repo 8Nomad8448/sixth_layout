@@ -41,6 +41,8 @@
 			display: flex;
 			justify-content: center;
 			a {
+				transition: .5s;
+				transition-timing-function: ease-in-out;
 				background: $blue_wite_light;
 				width: 2em;
 				padding: 5px 3px 4px;
@@ -48,6 +50,12 @@
 				color: $white;
 				border-radius: 50%;
 				margin: 0 .2em;
+				&:hover, :active, :focus {
+					transition: .5s;
+					transition-timing-function: ease-in-out;
+					background: $white;
+					color: $blue_grey;
+				}
 				i {
 					font-size: $fontsize_main;
 				}
@@ -56,7 +64,7 @@
 	}
 	.team_block_wrapp .block_team {
 		&:nth-child(2n-1) {
-			padding-right: 0px;
+			padding-right: 0;
 			.under_small_headlines div {
 				letter-spacing: .03em;
 			}

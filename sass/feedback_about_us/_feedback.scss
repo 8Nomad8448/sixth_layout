@@ -1,6 +1,6 @@
 .about_us {
 	background: $pink;
-	padding: 5em 0 7.93em;
+	padding: 5em 0 7.7em;
 	hr {
 		margin: 0 auto 0;
 		width: 5.5em;
@@ -18,7 +18,7 @@
 		@include centered();
 		@include text($fontsize_main, $weight_primary, $line_height_secondary, .025em);
 		@include colors($transparent, $white);
-		margin: 1.05em auto 3.6em;
+		margin: 1.1em auto 3.6em;
 	}
 	.comment_block {
 		.about_block {
@@ -27,7 +27,7 @@
 					.paragraphs {
 						letter-spacing: .034em;
 						margin-left: 2.16em;
-						margin-top: .24em;
+						margin-top: .2em;
 					}
 					.small_headlines {
 						margin-top: .9em;
@@ -91,16 +91,18 @@
 			}
 		}
 	}
-	.about_third, .about_fourth {
-		margin-top: 8.8em;
-	}
-	.about_first, .about_third {
-		padding-right: 0;
-		padding-left: 1.45em;
-	}
-	.about_second, .about_fourth {
-		padding-right: 0px;
-		padding-left: 2.45em;
+	.about_block {
+		&:nth-child(4n-1), &:nth-child(4n) {
+			margin-top: 8.9em;
+		}
+		&:nth-child(2n-1), &:nth-child(4n-1) {
+			padding-right: 0;
+			padding-left: 1.45em;
+		}
+		&:nth-child(2n), &:nth-child(4n) {
+			padding-right: 0;
+			padding-left: 2.45em;
+		}
 	}
 	.about_block {
 		justify-content: space-between;
